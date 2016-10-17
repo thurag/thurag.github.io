@@ -949,7 +949,7 @@ dd {
     background-position: center center;
     color: white;
     padding: 0;
-    height: 3em
+    height: 12em
 }
 
 .header .container {
@@ -969,7 +969,7 @@ dd {
     margin: 0;
     float: left;
     padding-left: 2rem;
-    font-size: 1em;
+    font-size: 2em;
     line-height: 3em;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 800;
