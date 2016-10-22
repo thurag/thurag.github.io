@@ -944,7 +944,7 @@ dd {
 
 .header {
     background-color: #2e8b57;
-    background-image: url("../img/meechaw2.jpg");
+    background-image: url("../img/meechaw3.jpg");
     background-size: cover;
     background-position: center center;
     color: white;
@@ -1452,7 +1452,7 @@ dd {
     src:local('Myanmar3'), url('../fonts/myanmar3.woff') format('woff'), url('../fonts/myanmar3.ttf') format('ttf');
 }
 
-.myanmar3, * {
+.myanmar3, h4,h5,h6, p, span {
     font-family:Myanmar3,Yunghkio !important;
 }
 
