@@ -1452,8 +1452,8 @@ dd {
     src:local('Myanmar3'), url('../fonts/myanmar3.woff') format('woff'), url('../fonts/myanmar3.ttf') format('ttf');
 }
 
-.myanmar3, body {
-    font-family:Myanmar3,Yunghkio;
+.myanmar3, * {
+    font-family:Myanmar3,Yunghkio !important;
 }
 
 .tooltip {
