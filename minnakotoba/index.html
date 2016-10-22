@@ -1,0 +1,42 @@
+---
+layout: default
+title: みんなことば
+---
+
+<div class="home" id="home">
+  <h1 class="pageTitle">{{ page.title }}</h1>
+
+
+  <ul>
+  {% for vocal in site.data.vocals %}
+    {% for vocals in vocal %}
+
+			<!-- minna chapter by array index -->
+			{% for title in vocals[2].title %}
+				{{title}}
+			{% endfor %}
+		    <div class="list-type1">
+		     <ol>
+			{% for chapterWords in vocals[2].words %}
+			  <li>
+				  <a href="#">
+					  <span class="first">{{chapterWords.hiragana}}</span>
+					  <span class="second">{{chapterWords.romaji}}</span> [<span class="third">{{chapterWords.kanji}}</span>]<br>
+					  <span class="fourth">{{chapterWords.english}}</span>
+					  <span class="fifth">{{chapterWords.myanmar}}</span>
+				  </a>
+			  </li>
+			  
+			{% endfor %}
+		     </ol>
+		    </div>
+
+    {% endfor %}
+  {% endfor %}
+  </ul>
+  
+  
+  CSS list style from <a href="https://www.formget.com/css-lists/">FormGet</a>  
+  
+
+</div>
