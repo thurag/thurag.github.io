@@ -8,6 +8,7 @@
 
 }
 .list-type1 ol{
+    margin-left: 15px;
     counter-reset: li;
     list-style: none;
     *list-style: decimal;

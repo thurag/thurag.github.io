@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+{% include head.html %}
+
+<body>
+
+   {% include header.html %}
+
+   <div class="content">
+      <div class="container">
+         {{ content }}
+
+		<!-- list style only for minna -->
+		<link rel="stylesheet" href="{{ "/assets/css/list-style.css" | prepend: site.baseurl }}">
+		<div class="home" id="home">
+
+		  <div class="list-type1">
+		  {% for vocal in site.data.vocals %}
+		    {% for vocals in vocal %}
+
+				<!-- minna chapter by array index -->
+				{% for title in vocals[{{page.chapter}}].title %}
+					<p class="shadow">{{ title }}</p>
+				{% endfor %}
+			    
+				
+			    <ol>
+			     {% for chapterWords in vocals[{{page.chapter}}].words %}
+				  <li>
+					  <a href="#">
+						  <span class="first">{{chapterWords.hiragana}}</span>
+						  <span class="second">{{chapterWords.romaji}}</span> [<span class="third">{{chapterWords.kanji}}</span>]<br>
+						  <span class="fourth">{{chapterWords.english}}</span>
+						  <span class="fifth">{{chapterWords.myanmar}}</span>
+					  </a>
+				  </li>
+				{% endfor %}
+			    </ol>
+
+		    {% endfor %}
+		  {% endfor %}
+		  </div>
+		  
+		  CSS list style from <a href="https://www.formget.com/css-lists/">FormGet</a>  
+		</div>
+
+      </div>
+   </div><!-- end .content -->
+
+   {% include footer.html %}
+   {% include scripts.html %}
+
+</body>
+
+</html>

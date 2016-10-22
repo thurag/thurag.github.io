@@ -6,6 +6,11 @@ baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
+collections:
+  minna:
+    output: true
+    permalink: /minna/:path/
+
 markdown: kramdown
 highlighter: rouge
 gems: [jekyll-paginate]
