@@ -112,14 +112,14 @@ a {
 .list-type3{
     overflow: hidden;
     margin:0 auto;
-    width:500px;
+    width:100%;
 }
 .list-type3 li, .list-type3  a{
     display: block;
-    margin-right: 35px;
+    padding-right: 25px;
     float:left;
     height:35px;
-    line-height:35px;
+    line-height:37px;
     position:relative;
     font-size:15px;
     margin-bottom: 12px;
