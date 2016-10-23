@@ -12,26 +12,23 @@
 
    <div class="content">
       <div class="container">
-         {{ content }}
 
 		<!-- list style only for minna -->
 		<link rel="stylesheet" href="{{ "/assets/css/list-style.css" | prepend: site.baseurl }}">
 		<div class="home" id="home">
 
 		  <div class="list-type1">
+
+		  <p class="shadow">{{ page.title }}</p>
+		  
 		  {% for vocal in site.data.vocals %}
 		    {% for vocals in vocal %}
-
-				<!-- minna chapter by array index -->
-				{% for title in vocals[{{page.chapter}}].title %}
-					<p class="shadow">{{ title }}</p>
-				{% endfor %}
-			    
 				
 			    <ol>
+			    <!-- minna chapter by array index -->
 			     {% for chapterWords in vocals[{{page.chapter}}].words %}
 				  <li>
-					  <a href="#">
+					  <a>
 						  <span class="first">{{chapterWords.hiragana}}</span>
 						  <span class="second">{{chapterWords.romaji}}</span> [<span class="third">{{chapterWords.kanji}}</span>]<br>
 						  <span class="fourth">{{chapterWords.english}}</span>
@@ -44,10 +41,13 @@
 		    {% endfor %}
 		  {% endfor %}
 		  </div>
+		
+         {{ content }}
 		  
-		  CSS list style from <a href="https://www.formget.com/css-lists/">FormGet</a>  
+		  
 		</div>
-
+		
+		<p>CSS list style from <a href="https://www.formget.com/css-lists/">FormGet</a><p>
       </div>
    </div><!-- end .content -->
 
