@@ -35,7 +35,9 @@ function insertMessage() {
     return false;
   }
 
-  roomBroadcastRef.push({msg: knayi.fontConvert(msg, 'unicode'), from: clientId, clientImg: clientImg}); // sent msg by me
+  var fontSelected = $("input[name='fontOption']:checked").val() || null;
+
+  roomBroadcastRef.push({msg: knayi.fontConvert(msg, 'unicode', fontSelected), from: clientId, clientImg: clientImg}); // sent msg by me
 
   // setTimeout(function() {
   //   fakeMessage();

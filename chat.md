@@ -10,7 +10,10 @@ title: Chat
  </div>
  <div class="chat">
     <div class="chat-title">
-      <h1>Chat</h1>
+      <h1>My device is using</h1>
+      <input type="radio" name="fontOption" value="unicode"> UNICODE
+      <input type="radio" name="fontOption" value="zawgyi"> ZAWGYI
+      <input type="radio" name="fontOption" value="" checked> AUTO DETECT
       <!-- <h2>RE/MAX</h2>
       <figure class="avatar">
       <img src="http://askavenue.com/img/17.jpg" /></figure> -->
