@@ -4,10 +4,10 @@ title: Chat
 ---
 
 <section class="avenue-messenger">
- <div class="agent-face">
+ <!-- <div class="agent-face">
   <div class="half">
    <img class="agent circle" src="" alt="Profile photo" alt="Jesse Tino"></div>
- </div>
+ </div> -->
  <div class="chat">
     <div class="chat-title">
       <h1>My device is using</h1>
